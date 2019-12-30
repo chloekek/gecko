@@ -16,9 +16,11 @@ type Unit = [Definition]
 data Definition
   = ValueDefinition Position Identifier Type Term
   | WrapperDefinition Position Identifier [(Identifier, Kind)] Type
+  deriving stock (Show)
 
 data Kind
   = TypeKind Position
+  deriving stock (Show)
 
 data Type
   = NamedType Position Identifier
@@ -26,6 +28,7 @@ data Type
   | RowNilType Position
   | RowConsType Position Identifier Type Type
   | ForallType Position Identifier Type
+  deriving stock (Show)
 
 data Term
   = VariableTerm Position Identifier
@@ -33,3 +36,4 @@ data Term
   | RecordTerm Position [(Identifier, Term)]
   | InjectTerm Position Identifier Term
   | WrapTerm Position Identifier Term
+  deriving stock (Show)

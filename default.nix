@@ -5,6 +5,7 @@ let
         p.base
         p.hashable
         p.lens
+        p.megaparsec
         p.mtl
         p.text
         p.unordered-containers

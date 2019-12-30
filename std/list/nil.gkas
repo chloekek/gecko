@@ -1,7 +1,7 @@
 value
     list/nil
 of
-    forall a ->
+    forall a =>
         list a
 is
     wrap list (inject nil {})

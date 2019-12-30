@@ -1,0 +1,8 @@
+value
+    list/nil
+of
+    forall a ->
+        list a
+is
+    wrap list (inject nil {})
+end

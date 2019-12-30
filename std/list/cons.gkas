@@ -1,0 +1,9 @@
+value
+    list/cons
+of
+    forall a ->
+        a -> list a -> list a
+is
+    fun head tail ->
+        wrap list (inject cons {head, tail})
+end

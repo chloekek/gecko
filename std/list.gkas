@@ -1,0 +1,9 @@
+wrapper
+    list
+of
+    a : type
+is
+    [ nil : {}
+    + cons : { head : a
+             * tail : list a } ]
+end
